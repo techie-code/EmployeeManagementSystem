@@ -1,0 +1,51 @@
+@charset "ISO-8859-1";
+body{
+    background: linear-gradient(-90deg, #000000, #003d3d, #0e0f0f, #003336);
+	background-size: 400% 400%;
+    animation: backgroundanimate 10s ease-in-out infinite;
+}
+
+@keyframes backgroundanimate {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+.updatecard{
+    margin-top: 50px;
+    width: 45%;
+    color: #060707;
+    text-align: center;
+}
+.intro1 {
+    margin-top: 55px;
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+	line-height:0.70em;
+	outline:none;
+	animation: animate 2s linear infinite;
+}
+@keyframes animate{
+	0%,20%,40%,60%,90%
+	{
+		color:#00e5ff;
+		text-shadow:none;
+	}
+	1%,21%,41%,61%,91%
+	{
+		color:#fff;
+		text-shadow:0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;
+	}
+}

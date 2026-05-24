@@ -1,0 +1,126 @@
+@charset "ISO-8859-1";
+body{
+    background: linear-gradient(-90deg, #000000, #003d3d, #0e0f0f, #003336);
+	background-size: 400% 400%;
+    animation: backgroundanimate 10s ease-in-out infinite;
+}
+.intro1 {
+    margin-top: 55px;
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+	line-height:0.70em;
+	outline:none;
+	animation: animate 2s linear infinite;
+}
+.concard{
+    background-color:rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(15px);
+    margin-top:10em;
+    width: 30%;
+    height: 15em;
+    border-image:  linear-gradient(to bottom, #ffffff, #0099ff, #fff, #00FFF5) 27;
+    color:azure;
+    text-align: center;
+    justify-content: center;
+    animation: fadeIn ease-in 2s;
+}
+.buttonclass1{
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.btn:hover{
+    box-shadow:  1px 1px 5px rgb(255, 255, 255);
+    background-color: #000000;
+    color: white;
+}
+.buttonclass {
+    margin-top: 10px;
+    text-align: center;
+    animation: shake 2s linear infinite;
+  }
+ .errors{
+ color:white;
+ text-align:center;
+ font-size:22px;
+ padding-bottom:15px;
+ }
+ .warning{
+ color:red;
+ }
+
+ .errors img{
+    position: relative;
+    animation: alien 3s infinite;
+    animation-direction: alternate;
+  }
+.errors1{
+ color:white;
+ text-align:center;
+ font-size:22px;
+ padding-bottom:15px;
+ }
+
+  @keyframes alien {
+      from{
+      left:-200px;
+      }
+      to{
+      left:200px;
+      }
+  }
+
+  @keyframes shake {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+  @keyframes backgroundanimate {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+@keyframes animate{
+	0%,20%,40%,60%,90%
+	{
+		color:#00e5ff;
+		text-shadow:none;
+	}
+	1%,21%,41%,61%,91%
+	{
+		color:#fff;
+		text-shadow:0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;
+	}
+}

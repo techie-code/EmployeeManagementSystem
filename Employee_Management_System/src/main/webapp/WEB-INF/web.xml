@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>EMPLOYEE MANAGEMENT SYSTEM</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>FileUploadHandler</servlet-name>
+  <servlet-class>employeerecord.database.FileRead</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>FileUploadHandler</servlet-name>
+  <url-pattern>/employee/FileUpload/*</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>DownloadCsv</servlet-name>
+  <servlet-class>employeerecord.database.DownloadCsv</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DownloadCsv</servlet-name>
+  <url-pattern>/employee/DownloadCsv</url-pattern>
+  </servlet-mapping>
+    <servlet>
+  <servlet-name>DownloadPdf</servlet-name>
+  <servlet-class>employeerecord.database.DownloadPdf</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DownloadPdf</servlet-name>
+  <url-pattern>/employee/DownloadPdf</url-pattern>
+  </servlet-mapping>
+  <security-constraint>
+  <web-resource-collection>
+  <web-resource-name>Employee</web-resource-name>
+  <url-pattern>/employee/*</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+  <role-name>Admin</role-name>
+  </auth-constraint>
+  </security-constraint>
+  <security-role>
+  <role-name>Admin</role-name>
+  </security-role>
+  <security-role>
+  <role-name>Employee</role-name>
+  </security-role>
+  <login-config>
+  <auth-method>FORM</auth-method>
+  <realm-name>UserLoginModule</realm-name>
+  <form-login-config>
+  <form-login-page>/login.jsp</form-login-page>
+  <form-error-page>/erroruser.jsp</form-error-page>
+  </form-login-config>
+  </login-config>
+ <error-page>
+<error-code>403</error-code>
+<location>/invaliduser.jsp</location>
+</error-page>
+<session-config>
+<session-timeout>60</session-timeout>
+</session-config>
+</web-app>

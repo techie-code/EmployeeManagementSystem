@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+body{
+    background: linear-gradient(-90deg, #000000, #003d3d, #0e0f0f, #003336);
+	background-size: 400% 400%;
+    animation: backgroundanimate 10s ease-in-out infinite;
+	align-items: center;
+}
+.concard{
+    background-color:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    margin-top:10em;
+    width: 35%;
+    border-image:  linear-gradient(to bottom, #0400ff, #0099ff, #fff, #00FFF5) 27;
+    color:azure;
+	position: relative;
+  
+}
+.otpcontent{
+	text-align: center;
+}
+.already-exist{
+	padding-top:10px;
+	font-family:Courier;
+}
+.otpcard{
+    background-color:rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    margin-top:10em;
+    width: 35%;
+    border-image:  linear-gradient(to bottom, #0400ff, #0099ff, #fff, #00FFF5) 27;
+    color:azure;
+	position: relative;
+	height: 450px;
+  width: 800px;
+  
+}
+.google-login{
+	align-items: center;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.otpvalidation{
+	position: relative;
+	top: 20%;
+	width: 350px;
+}
+.otpimg {
+	position: absolute;
+	top: 20%;
+	left: 55%;
+	height: 70%;
+	animation: otpimg 2s infinite;
+  }
+  .otpcounter{
+	font-family: 'Courier New', Courier, monospace;
+}
+.linkclass .linkclass1{
+    padding-top: 20px;
+}
+.linkclass a{
+    color: #00e5ff;
+}
+.linkclass1{
+    text-align: end;
+}
+.linkclass1 a{
+    color: #00e5ff;
+}
+.form-group{
+    padding: 10px;
+}
+h4{
+    padding: 15px;
+    color:aqua;
+    border-color: black;
+    text-align: center;
+}
+h2{
+    padding: 15px;
+    color:aqua;
+    border-color: black;
+    text-align: center;
+}
+.buttonclass{
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.buttonclass1{
+    margin-top: 10px;
+    text-align: end;
+    
+}
+.btn:hover{
+    box-shadow:  1px 1px 5px rgb(255, 255, 255);
+    background-color: #000000;
+    color: white;
+}
+.intro1 {
+    margin-top: 55px;
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+	line-height:0.70em;
+	outline:none;
+	animation: animate 2s linear infinite;
+}
+.errorclass{
+	text-align:center;
+	color:white;
+}
+@keyframes otpimg {
+	0%, 7% {
+		transform: rotateZ(0);
+	  }
+	  15% {
+		transform: rotateZ(-15deg);
+	  }
+	  20% {
+		transform: rotateZ(10deg);
+	  }
+	  25% {
+		transform: rotateZ(-10deg);
+	  }
+	  30% {
+		transform: rotateZ(6deg);
+	  }
+	  35% {
+		transform: rotateZ(-4deg);
+	  }
+	  40%, 100% {
+		transform: rotateZ(0);
+	  }
+  }
+
+@keyframes backgroundanimate {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+@keyframes animate{
+	0%,20%,40%,60%,90%
+	{
+		color:#00e5ff;
+		text-shadow:none;
+	}
+	1%,21%,41%,61%,91%
+	{
+		color:#fff;
+		text-shadow:0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;
+	}
+}

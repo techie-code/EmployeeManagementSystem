@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+.searcherror{
+	margin-top:10px;
+	text-align:center;
+	color:aqua;
+}
+table {
+	margin-top:15px;
+	background-color:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    color:white;
+
+  }
+  th{
+  text-shadow: 2px 2px #000000;
+  }
+ td{
+ color:white;
+ }
+ th{
+	color:white;
+}
+.errorcard{
+	text-align:center;
+	margin-top: 35px;
+	width:40%!important;
+    color: white;
+	background-color:rgba(255, 255, 255, 0.1)!important;
+    backdrop-filter: blur(30px)!important;
+}

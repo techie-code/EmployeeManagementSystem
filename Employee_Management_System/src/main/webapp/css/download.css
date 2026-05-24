@@ -1,0 +1,167 @@
+@charset "ISO-8859-1";
+body{
+    background: linear-gradient(-90deg, #000000, #003d3d, #0e0f0f, #003336);
+	background-size: 400% 400%;
+    animation: backgroundanimate 10s ease-in-out infinite;
+}
+.intro1 {
+    margin-top: 55px;
+	position:relative;
+	text-align:center;
+	text-transform:uppercase;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+	line-height:0.70em;
+	outline:none;
+	animation: animate 2s linear infinite;
+}
+.concard{
+    background-color:rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(15px);
+    margin-top:10em;
+    width: 30%;
+    height: 18em;
+    font-family: 'Courier New', Courier, monospace;
+    /*border-image:  linear-gradient(to bottom, #ffffff, #0099ff, #fff, #00FFF5) 27;*/
+    border-color: #fff;
+    border-style: dashed;
+    color:azure;
+    text-align: center;
+    justify-content: center;
+    animation: fadeIn ease-in 2s;
+}
+.buttonclass{
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;  
+}
+.invalid{
+  color: yellow;
+}
+.btn:hover{
+    box-shadow:  1px 1px 5px rgb(255, 255, 255);
+    background-color: #000000;
+    color: white;
+}
+.fileicon{
+    margin-top: 20px;
+    color: #00e5ff;
+    animation:colorchange 10s infinite alternate;
+}
+  input[type=file]::file-selector-button {
+    border: 4px solid #0dcaf0;
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: #0dcaf0;
+    transition: .5s;
+  }
+  input[type=file]::file-selector-button:hover {
+    border: 1px solid #000000;
+    color: white;
+    border-color: #00e5ff;
+    background-color: #000000;
+  }
+  .fileupload{
+      margin-top: 50px;
+      position: relative;
+  }
+  .back{
+    margin-top: 20px;
+  }
+  .downloadcard{
+    background-color: #000000;
+    width: 40%;
+    height: 10em;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 4px;
+  }
+  .csvicon{
+    color: green;
+  }
+  .pdficon{
+    color: red;
+  }
+  .downloadbtn{
+    margin: 4px;
+  }
+@keyframes colorchange{
+    0% {
+        color: rgb(0, 247, 255);
+      }
+      10% {
+        
+        color: #ffffff;
+      }
+      
+      20% {
+        
+        color: #d6d3fd;
+      }
+      
+      30% {
+        
+        color: #00ffea;
+      }
+      
+      40% {
+        
+        color: rgb(0, 238, 255);
+      }
+      
+      50% {
+        
+        color: #00e1ff;
+      }
+      
+      60% {
+        
+        color: rgb(255, 255, 255);
+      }
+      
+      70% {
+        
+        color: #00ccff;
+      }
+      80% {
+     
+        color: #67ddd7;
+      }
+      
+      90% {
+     
+        color: #88c2d1;
+      }
+      
+      100% {
+        
+        color: rgb(0, 255, 213);
+      }
+}
+@keyframes backgroundanimate {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+@keyframes animate{
+	0%,20%,40%,60%,90%
+	{
+		color:#00e5ff;
+		text-shadow:none;
+	}
+	1%,21%,41%,61%,91%
+	{
+		color:#fff;
+		text-shadow:0 0 10px #03bcf4,
+		0 0 20px #03bcf4,
+		0 0 40px #03bcf4,
+		0 0 80px #03bcf4,
+		0 0 160px #03bcf4;
+	}
+}
